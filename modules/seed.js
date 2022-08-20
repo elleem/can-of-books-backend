@@ -14,32 +14,36 @@ db.once('open', function() {
   console.log('Mongoose is connected for seeding!');
 });
 
-const Cat = require('./models/cat');
+const Book = require('../models/books');
 
 // create a function that seeds the database
 async function seed() {
   console.log('seeding database...');
   // seed the database with some cats so I can retrieve them
-  const myCat = new Cat({
-    name: 'Mac',
-    color: 'grey',
-    hasClaws: true,
-    location: 'Texas'
+  const myBooks = new Book({
+    title: 'A Scanner Darkly',
+    description:'The semi-autobiographical story is set in a dystopian Orange County, California, in the then-future of June 1994, and includes an extensive portrayal of drug culture and drug use.',
+    status: 'finished'
   });
-  myCat.save(function (err) {
+  myBooks.save(function (err) {
     if (err) console.error(err);
-    else console.log('saved Mac in database!');
+    else console.log('saved Darkly in database!');
   });
 
   // alternately...
-  await Cat.create({
-    name: 'Hootie',
-    color: 'brownish w/ black and white',
-    hasClaws: true,
-    location: 'St. Louis'
+  await Book.create({
+    title: 'Demian',
+    description:'Emil Sinclair is a young boy raised in a middle class home, amidst what is described as a Scheinwelt, a play on words meaning "world of light" as well as "world of illusion".',
+    status: 'finished'
   });
 
-  console.log('saved Hootie into database');
+  await Book.create({
+    title: 'The Exorcist',
+    description:'The book details the demonic possession of eleven-year-old Regan MacNeil, the daughter of a famous actress, and the two priests who attempt to exorcise the demon. ',
+    status: 'finished'
+  });
+
+  console.log('saved books into database');
 
   console.log('done seeding!');
 
