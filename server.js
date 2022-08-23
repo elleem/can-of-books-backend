@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const getBooks = require('./modules/handlers');
+const notFound = require('./modules/notFound');
 
 const app = express();
 app.use(cors());
@@ -26,6 +27,7 @@ app.get('/test', (request, response) => {
 });
 
 app.get('/books', getBooks);
+app.get('*', notFound);
 
 app.use((error, request, response, next) => {
   response.status(500).send(`Error occurred in the server! ${error.message}`);
