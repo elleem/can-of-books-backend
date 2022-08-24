@@ -60,6 +60,28 @@ Finish time: 6:30pm
 Actual time needed to complete: 1 hour and 15 minutes
 ######################################################
 
+Name of feature: Add Storage
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2pm
+
+Finish time: 4pm
+
+Actual time needed to complete: 2 hours
+######################################################
+
+Name of feature: Add book component
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 4pm
+
+Finish time: 6:30pm
+
+Actual time needed to complete: 1 hour and 15 minutes
+######################################################
+
 ## Collaborations
 created by Alejandro, Daniel, and Lauren
 
