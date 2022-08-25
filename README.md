@@ -2,7 +2,7 @@
 
 
 **Author**: created by Alejandro, Daniel, and Lauren 
-**Version**: 1.0.0 
+**Version**: 1.0.2
 
 ## Overview
 [Visit our site on Netlify here](https://canbooksdb.netlify.app/)
@@ -72,18 +72,18 @@ Start time: 9:00pm-10:00pm, 6:45pm -7:20pm
 
 Finish time: 7:20pm 
 
-Actual time needed to complete: 
+Actual time needed to complete: 1 hour and 35 minutes
 ######################################################
 
 Name of feature: Add Delete method
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 4pm
+Start time: 7:20pm 
 
-Finish time: 6:30pm
+Finish time: 7:40pm
 
-Actual time needed to complete: 1 hour and 15 minutes
+Actual time needed to complete: 20 minutes
 ######################################################
 
 ## Collaborations
