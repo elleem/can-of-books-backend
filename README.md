@@ -19,14 +19,16 @@ JavaScript, React, Bootstrap, Node.js, Mongo, Heroku, Mongoose
 <li>Initial setup: 8/20/2022</li>
 <li> Add Storage: 8/20/2022</li>
 <li> Add book component: 8/20/2022 </li>
-<li> </li>
-<li>  </li>
+<li> Add post method:  8/24/2022 </li>
+<li> Add delete method: 8/24/2022</li>
 <li> </li>
 <li>  </li>
 <li> </li>
 </ul>
 
 ## Estimates
+
+### Lab 11
 Name of feature: Initial setup
 
 Estimate of time needed to complete: 2 hours
@@ -60,18 +62,20 @@ Finish time: 6:30pm
 Actual time needed to complete: 1 hour and 15 minutes
 ######################################################
 
-Name of feature: Add Storage
+### Lab 12
+
+Name of feature: Add Post method
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 2pm
+Start time: 9:00pm-10:00pm, 6:45pm -7:20pm
 
-Finish time: 4pm
+Finish time: 7:20pm 
 
-Actual time needed to complete: 2 hours
+Actual time needed to complete: 
 ######################################################
 
-Name of feature: Add book component
+Name of feature: Add Delete method
 
 Estimate of time needed to complete: 2 hours
 
