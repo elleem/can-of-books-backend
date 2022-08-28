@@ -44,7 +44,6 @@ Handler.deleteBook = async (request, response, next) => {
 
 Handler.updateBook = async (request, response, next) => {
   try {
-    console.log('Request Obj in Update Book: ', request);
     await Book.findByIdAndUpdate(request.params.id,request.body,{new:true, overwrite: true});
     response.status(200).send('your book is updated!');
   } catch (error) {

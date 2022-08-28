@@ -92,11 +92,11 @@ Name of feature: Add update method
 
 Estimate of time needed to complete: 4 hours
 
-Start time: 
+Start time: 2:00pm 
 
-Finish time: 
+Finish time: 5:45pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 3 hours and 45 minutes
 ######################################################
 
 ## Collaborations
