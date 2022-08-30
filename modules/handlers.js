@@ -44,8 +44,8 @@ Handler.deleteBook = async (request, response, next) => {
 
 Handler.updateBook = async (request, response, next) => {
   try {
-    await Book.findByIdAndUpdate(request.params.id,request.body,{new:true, overwrite: true});
-    response.status(200).send('your book is updated!');
+    let newBook = await Book.findByIdAndUpdate(request.params.id,request.body,{new:true});
+    response.status(200).send(newBook);
   } catch (error) {
     error.customMessage = 'Something went wrong when updating your book: ';
     console.error(error.customMessage + error);
