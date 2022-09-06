@@ -19,11 +19,12 @@ const Book = require('../models/books');
 // create a function that seeds the database
 async function seed() {
   console.log('seeding database...');
-  // seed the database with some cats so I can retrieve them
+  // seed the database with some books so I can retrieve them
   const myBooks = new Book({
     title: 'A Scanner Darkly',
     description:'The semi-autobiographical story is set in a dystopian Orange County, California, in the then-future of June 1994, and includes an extensive portrayal of drug culture and drug use.',
-    status: 'finished'
+    status: 'finished',
+    email: 'lauren.main28@gmail.com'
   });
   myBooks.save(function (err) {
     if (err) console.error(err);
@@ -34,13 +35,15 @@ async function seed() {
   await Book.create({
     title: 'Demian',
     description:'Emil Sinclair is a young boy raised in a middle class home, amidst what is described as a Scheinwelt, a play on words meaning "world of light" as well as "world of illusion".',
-    status: 'finished'
+    status: 'finished',
+    email: 'lauren.main28@gmail.com'
   });
 
   await Book.create({
-    title: 'The Exorcist',
-    description:'The book details the demonic possession of eleven-year-old Regan MacNeil, the daughter of a famous actress, and the two priests who attempt to exorcise the demon. ',
-    status: 'finished'
+    title: 'Desert Solitaire',
+    description:'Desert Solitaire is a meditation on the stark landscapes of the red-rock West, a passionate vote for wilderness, and a howling lament for the commercialization of the American outback. ',
+    status: 'finished',
+    email: 'lauren.main28@gmail.com'
   });
 
   console.log('saved books into database');
