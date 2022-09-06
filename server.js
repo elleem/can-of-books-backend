@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // const getBooks = require('./modules/handlers');
 const notFound = require('./modules/notFound');
 const Handler = require('./modules/handlers');
-const verifyUser = require('./auth.js');
+const verifyUser = require('./modules/auth.js');
 
 const app = express();
 app.use(cors());
@@ -23,13 +23,15 @@ db.once('open', function() {
   console.log('Mongoose is connected');
 });
 
+
+app.use(verifyUser);
+
 app.get('/test', (request, response) => {
 
-  response.send('test request received');
+  response.send(request.user);
 
 });
 
-app.use(verifyUser);
 
 app.get('/books', Handler.getBooks);
 app.post('/books', Handler.createBook);
@@ -45,6 +47,6 @@ app.use((error, request, response, next) => {
 function handleGetUser(req, res) {
   console.log('Getting the user');
   res.send(req.user);
-};
+}
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
