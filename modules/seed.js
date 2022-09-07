@@ -46,6 +46,28 @@ async function seed() {
     email: 'lauren.main28@gmail.com'
   });
 
+  await Book.create({
+    title: 'A Sand County Almanac',
+    description:'Describing the land around the author\'s home in Sauk County, Wisconsin, the collection of essays advocate Leopold\'s idea of a "land ethic", or a responsible relationship existing between people and the land they inhabit. ',
+    status: 'finished',
+    email: 'razor@jetcityrollerderby.com'
+  });
+
+
+  await Book.create({
+    title: 'Homeland Elegies',
+    description:'The idea for writing Homeland Elegies came to Akhtar while he was in Rome, reading Giacomo Leopardi\'s Canti. The first poem "To Italy" inspired him to write a novel about America, that "seemed on the verge of splitting apart." ',
+    status: 'finished',
+    email: 'razor@jetcityrollerderby.com'
+  });
+
+  await Book.create({
+    title: 'Dune',
+    description:'Dune is set in the distant future amidst a feudal interstellar society in which various noble houses control planetary fiefs. It tells the story of young Paul Atreides, whose family accepts the stewardship of the planet Arrakis.',
+    status: 'finished',
+    email: 'razor@jetcityrollerderby.com'
+  });
+
   console.log('saved books into database');
 
   console.log('done seeding!');

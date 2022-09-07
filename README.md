@@ -102,13 +102,13 @@ Actual time needed to complete: 3 hours and 45 minutes
 
 Name of feature: Add authO method
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 3 hours
 
-Start time: 
+Start time: 10:00pm to 11:00pm, 2:00pm to 3:10pm, 5:30pm to 6:00pm
 
-Finish time: 
+Finish time: 6:00pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 2 hours, 40 minutes
 ######################################################
 
 ## Collaborations
